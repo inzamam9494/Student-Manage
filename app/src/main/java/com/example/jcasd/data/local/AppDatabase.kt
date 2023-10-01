@@ -5,9 +5,9 @@ import androidx.room.RoomDatabase
 
 // step 9 create a database class
 @Database(
-    entities = [EntityOne::class], // todo 9.1 update entities
+    entities = [StudentEntity::class],
     version = 1
 )
 abstract class AppDatabase: RoomDatabase() {
-    abstract val dao: EntityDao // todo 9.2 update dao if needed
+    abstract val dao: StudentDao
 }
